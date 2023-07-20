@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box; 
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+li:hover {
+  background-color: white;
+  font-weight: 900;
+  border: 1px solid black;
+}
+
+li {
+  display: inline;
+  width: 100px;
+  padding:0 15px;
+  list-style: square;
+  text-align: center;
+  color: skyblue;
+  border: 1px solid skyblue;
+}
+
+h1 {
+  margin: 15px;
+  color: skyblue;
+  text-align: center;
+}
+
+.semantic {
+  margin: 0 15px 15px 15px;
+  width: 100%;
+  height: 350px;
+  overflow: auto;
+}
+
+.semantic table {
+  height: 300px;
+}
+
+.semantic h2 {
+  color: skyblue;
+  padding: 0 auto;
+  font-size: 25px;
+}
+
+header {
+  height: 50px;
+}
+
+a :link {
+  color: red;
+}
+
+a :visited {
+  background-color: white;
+}
+
+table {
+  border: 1px solid white;
+  width: 100%
+}
+
+th {
+  color: skyblue;
+  font-weight: 900;
+  font-size: 18px;
+  background-color: white;
+  padding: 0 20px;
+}
+
+td {
+  color: skyblue;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.tag {
+  font-weight: 800;
+}
+
+td.purpose {
+  font-size: 15px;
+  color: white;
+}
+
+.selectors h2 {
+  color: skyblue;
+}
+
+.selectors {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  margin: 0 15px;
+}
+
+
+
+span {
+  color: coral;
+}
+
+.purp {
+  min-width: 200px;
+}
+
+.specificity {
+  font-weight: bold;
+  color: white;
+}
+
+.properties h2{
+  color: skyblue;
+}
+
+.properties {
+  height: 600px;
+  margin: 0 15px;
+  overflow: auto;
+}
+
+.properties span {
+  color: indigo;
+}
+

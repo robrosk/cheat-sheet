@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Building Cheat Sheet</title>
+    <link rel='stylesheet' href='CSS/index.css'>
+  </head>
+  <body>
+    <h1>Website Building Cheat Sheet</h1>
+    <header>
+      <nav>
+        <ul>
+          <a href='#sm'><li>Semantic Elements</li></a>
+          <a href='#select'><li>CSS selectors</li></a>
+          <a href='#properties'><li>CSS properties</li></a>
+        </ul>
+      </nav>
+    </header>
+    <div class='semantic' id='sm'>
+      <h2>Semantic Elements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='tag'>&lt;article&gt;</td>
+            <td>Article</td>
+            <td class='purpose'>Stand alone content that makes sense alone.  Example: Blog, comments, and magazines.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;section&gt;</td>
+            <td>Section</td>
+            <td class='purpose'>Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;aside&gt;</td>
+            <td>Aside</td>
+            <td class='purpose'>Marks additional information that can enhance another element but isn't required to understand it.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;header&gt;</td>
+            <td>Header</td>
+            <td class='purpose'>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name and other elements.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;nav&gt;</td>
+            <td>Navigation</td>
+            <td class='purpose'>Represents a section of the page whose purpose is to provide navigation links.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;main&gt;</td>
+            <td>Main</td>
+            <td class='purpose'>Represents the dominant part of the &lt;body&gt; content.</td>
+          </tr>
+          <tr>
+            <td class='tag'>&lt;footer&gt;</td>
+            <td>Footer</td>
+            <td class='purpose'>Typically contains info about the author of the section, copyright data or links to related documents.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class='selectors' id='select'>
+      <h2>CSS Selectors</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector</th>
+            <th>Purpose</th>
+            <th>Example</th>
+            <th>Explanation</th>
+            <th>Specificity Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td  class='tag'>Type Selector</td>
+            <td class='purp'>All appeareances of the selected element in index.html will be affected by the type ruleset.</td>
+            <td><span>h1</span> {<br>
+              color: blue;
+              }</td>
+            <td>Applies the color blue to all h1 elements in your index.html file.</td>
+            <td class='specificity'>0 (Lowest)</td>
+          </tr>
+          <tr>
+             <td class='tag'>Universal selector</td>
+             <td class='purp'>This selectors ruleset applies to all elements on the webpage.</td>
+             <td><span>*</span> {<br>background-color: black}</td>
+             <td>The symbol "*" applied the shown ruleset to the entire webpage, turning the entire page black.</td>
+             <td class='specificity'>0</td>
+          </tr>
+          <tr>
+            <td class='tag'>Class selector</td>
+            <td>Applies to all elements that are apart of the selected class. All class selectors in CSS have a preceding "." that signals to the code that a class is present. Elements can contain more than one class and multiple elements can have the same class.</td>
+            <td><span>.paragraphs</span> {<br>}</td>
+            <td>The ruleset to the left is applied to all elements that contain the class "paragraphs"</td>
+            <td class='specificity'>1</td>
+          </tr>
+          <tr>
+            <td class='tag'>Attribute selector</td>
+            <td>Targets all elements that contain the selected attribute. Can be as specific or non-specific as you want.</td>
+            <td><span>[href]</span> {<br>}</td>
+            <td>The ruleset is applied to all elements that contain the "href" attribute.</td>
+            <td class='specificity'>1</td>
+          </tr>
+          <tr>
+            <td class='tag'>Psuedo selector</td>
+            <td>Applies the ruleset to the selected element when a certain criteria is met.</td>
+            <td>a<span>:visited</span> {<br>color: purple;<br>}</td>
+            <td>"a" stands for the element &lt;a&gt; which is an anchor tag that allows us to specify a link to text.  The <span>:visited</span> you see in the example makes it so that once the link is clicked and opened the ruleset is activated, thus turning the link purple.</td>
+            <td class='specificity'>1</td>
+          </tr>
+          <tr>
+            <td class='tag'>ID selector</td>
+            <td>Applies the ruleset to the element that contains the selected ID. Can only have a single value and can only be used once per page.</td>
+            <td>#header {<br>}</td>
+            <td>The "#" is used to signify to the file that an ID is being used.  The following ruleset is applied to the element that contains the ID: 'header'</td>
+            <td class='specificity'>2 (Highest)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class='properties' id='properties'>
+      <h2>CSS Properties</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Used for</th>
+            <th>Example</th>
+            <th>Explanation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='tag'>Color</td>
+            <td>Changes the color of the selected elements</td>
+            <td>h1 {<br><span>color</span>: red;<br>}</td>
+            <td>All h1 elements in index.html were turned red by the property <span>color</span></td>
+          </tr>
+          <tr>
+            <td class='tag'>Background-color</td>
+            <td>Changes the color of the background of the selected element</td>
+            <td>div {<br><span>background-color</span>: blue;<br>}</td>
+            <td>This changes the <span>background-color</span> of all div's in the webpage to blue.</td>
+          </tr>
+          <tr>
+            <td class='tag'>Font-size</td>
+              <td>Changing the size of the font. Its units are pixels, rems and ems.'</td>
+              <td>p {<br><span>font-size</span>: 20px;<br>}</td>
+              <td>The <span>font-size</span> of all paragraph (p) elements are changed to 20px (pixels)</td>
+          </tr>
+          <tr>
+            <td class='tag'>Font-family</td>
+            <td>Selecting the style of font you want to use.</td>
+            <td>h2 {<br><span>font-family</span>: 'Arial', sans<br>}</td>
+            <td>All h2 elements in the webpage have their font changed to Arial. If Arial doesn't work due to browser compatibility then sans will be used as a backup.</td>
+          </tr>
+          <tr>
+            <td class='tag'>Font-weight</td>
+            <td>Allows you to manipulate how bold or light an element is. Has several values including "lighter", "normal","bold", and "bolder." It is scaled from 0 to 900, where 0 is the lightest and 900 is the boldest.</td>
+            <td>p {<br><span>font-weight</span>: bold;<br>}</td>
+            <td>Bolds all the text in paragraph elements on the webpage.</td>
+          </tr>
+          <tr>
+            <td class='tag'>Border</td>
+            <td>Allows you to design the border of the content area.  You can custimize the size, fluidity, and color of the border.</td>
+            <td> .redbord {<br><span>border</span> :1px solid red;<br>}</td>
+            <td>All elements on the webpage that contain the class "redbord" have a 1 pixel solid red <span>border</span> applied to it.</td>
+          </tr>
+          <tr>
+            <td class='tag'>Padding</td>
+            <td>Allows you to manipulate the space between the content and the border. A very important tool for manipulating the size and placement of elements.</td>
+            <td>selector {<br><span>padding</span>: 20px;<br>}</td>
+            <td>All chosen elements will be given a <span>padding</span> on all sides of the element of 20 pixels.</td>
+          </tr>
+          <tr>
+            <td class='tag'>Margin</td>
+            <td>The amount of space between the border and the outside edge of the element. Allows you to manipulate elements in space outside of the selected element.</td>
+            <td>selector {<br><span>Margin</span>: 20px 30px;<br>}</td>
+            <td>A vertical margin of 20px was applied to the top and bottom of the selected element. A horizontal margin of 30px was applied to the left and right side of the selected element.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
